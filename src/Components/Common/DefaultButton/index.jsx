@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
  export default function DefaultButton({
@@ -9,7 +9,10 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
  }) {
 
     return (
-      <TouchableOpacity style={[styles.button, {width: width, height: height}]} activeOpacity={0.7} onPress={handlePress}>
+      <TouchableOpacity 
+        style={[styles.button, {width: width, height: height}]} 
+        activeOpacity={0.7} 
+        onPress={handlePress}>
         <Text> {buttonText}</Text>
       </TouchableOpacity>
     );
@@ -17,6 +20,7 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
  const styles = StyleSheet.create({
   button: {
+    backgroundColor: "#FFFFFF",
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
@@ -26,7 +30,6 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
   },
 
   buttonText: {
-    color: "#FFFFFF",
     fontWeight: "bold",
     fontSize: 12,
   },
