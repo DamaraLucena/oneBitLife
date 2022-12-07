@@ -26,7 +26,7 @@ export default function Start(){
             Vamos transformar sua vida {"\n"} em um jogo, sempre em busca {"\n"} dos melhores níveis.
           </Text>
 
-          <DefaultButton buttonText={"Continuar"} handlePress={handleNavAppExplanation} width={250} height={50}/>
+          <DefaultButton buttonText={"Continuar"} handlePress={handleNavAppExplanation} width={250} height={50} Color="white"/>
 
         </View>
       </ScrollView>

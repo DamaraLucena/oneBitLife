@@ -13,14 +13,14 @@ import { StyleSheet, Text, TouchableOpacity } from "react-native";
         style={[styles.button, {width: width, height: height}]} 
         activeOpacity={0.7} 
         onPress={handlePress}>
-        <Text> {buttonText}</Text>
+        <Text>{buttonText}</Text>
       </TouchableOpacity>
     );
  }
 
  const styles = StyleSheet.create({
   button: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#ffffff",
     alignItems: "center",
     justifyContent: "center",
     borderWidth: 1,
